@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lilian Rodrigues Ferreira de Melo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    header img {
+      max-width: 150px;
+      border-radius: 50%;
+    }
+    nav {
+      background: #ffffff;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin: 5px 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    nav a:hover {
+      color: #007acc;
+    }
+    main {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      color: #aaa;
+      margin-top: 40px;
+    }
+    .collaborator {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .collaborator img {
+      max-width: 100px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    window.onload = () => showSection('home');
+  </script>
+</head>
+<body>
+  <header>
+    <img src="photo.jpg" alt="Lilian's photo" />
+    <h1>Lilian Rodrigues Ferreira de Melo</h1>
+    <p>PhD in Ecology, Conservation and Biodiversity<br />
+       Postdoc, Plant Ecology and Evolution<br />
+       Uppsala University, Department of Ecology and Genetics</p>
+  </header>
+
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('research')">Research</a>
+    <a onclick="showSection('publications')">Publications</a>
+    <a onclick="showSection('cv')">CV</a>
+    <a onclick="showSection('collaborators')">Collaborators</a>
+    <a onclick="showSection('gallery')">Gallery</a>
+    <a onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  <main>
+    <section id="home" class="active">
+      <h2>Welcome</h2>
+      <p>I'm a postdoctoral researcher at Uppsala University, working on plant ecology and evolution. My research focuses on pollination biology and the dynamics of pollen transfer in buzz-pollinated systems.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I hold a PhD in Ecology, Conservation and Biodiversity. Currently, I work at the Department of Ecology and Genetics, Plant Ecology and Evolution, at Uppsala University. My scientific interests lie at the intersection of plant-pollinator interactions and evolutionary ecology.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p>More info coming soon. This section will describe current and past research projects, experimental setups (such as flight arenas), and collaborations.</p>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <p>Here you will find a list of my peer-reviewed articles, preprints, and conference presentations. [To be updated with links or BibTeX].</p>
+    </section>
+
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <p><a href="CV_Lilian_Melo.pdf" target="_blank">Download my full CV (PDF)</a></p>
+    </section>
+
+    <section id="collaborators">
+      <h2>Collaborators</h2>
+      <div class="collaborator">
+        <img src="collab1.jpg" alt="Collaborator 1">
+        <div>
+          <strong>Dr. Jane Smith</strong><br>
+          Pollination biology, University of Somewhere.<br>
+          Focus on bee-flower interactions in neotropical systems.
+        </div>
+      </div>
+      <div class="collaborator">
+        <img src="collab2.jpg" alt="Collaborator 2">
+        <div>
+          <strong>Dr. Carlos Torres</strong><br>
+          Evolutionary ecology, Federal University of Example.<br>
+          Works with mating systems and floral evolution.
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Research Gallery</h2>
+      <div class="gallery">
+        <img src="field1.jpg" alt="Fieldwork 1">
+        <img src="lab1.jpg" alt="Lab setup">
+        <img src="bee1.jpg" alt="Bee on flower">
+        <img src="flight_arena.jpg" alt="Flight arena">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: [your.email@ebc.uu.se]<br />
+         ORCID: [link]<br />
+         ResearchGate: [link]<br />
+         LinkedIn: [link]</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lilian Rodrigues Ferreira de Melo</p>
+  </footer>
+</body>
+</html>
