@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilian Rodrigues Ferreira de Melo</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="icon" href="photo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+
+
+
+ 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #f4f4f4;
+      padding: 0;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    header img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    nav {
+      background: #ffffff;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin: 5px 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    nav a:hover {
+      color: #007acc;
+    }
+    main {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      color: #aaa;
+      margin-top: 40px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    window.onload = () => showSection('home');
+  </script>
+
+ <header>
+          <nav class="menu">
+              <ul>
+                  <li class="nome"><a href="#hero-image">Lilian Rodrigues Ferreira de Melo</a></li>
+		  <li class="link-menu"><a href="#home">Home</a></li>
+                  <li class="link-menu"><a href="#about">About me</a></li>
+                  <li class="link-menu"><a href="#research">Research</a></li>
+                  <li class="link-menu"><a href="#publications">Publications</a></li>
+		  <li class="link-menu"><a href="#cv">CV</a></li>
+                  <li class="link-menu"><a href="#gallery">Gallery</a></li>
+ 		  <li class="link-menu"><a href="#contact">Contact</a></li>
+                  </l1>
+              </ul>
+          </nav>
+
+          <nav class="topnav">
+            <p class="active">RAQUEL C. PIZZARDO</p>
+            <div id="myLinks">
+ 	      <a href="#home">Home</a>
+              <a href="#about">About me</a>
+              <a href="#research">Research</a>
+              <a href="#publications">Publications</a>
+              <a href="#cv">CV</a>
+	      <a href="#gallery">Gallery</a>
+ 	      <a href="#contact">Contact</a>
+                           
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"><img class="burger" src="./img/burger.svg"></i>
+            </a>
+          </nav>
+
+      </header>
+  
+      <div class="hero-image" id="hero-image">
+        <div class="hero-text">
+              <h1><i>evolutionary ecologist</i></h1>
+                   </div>
+
+  <main>
+    <section id="home" class="active">
+      <h2>Welcome</h2>
+       <p class="justificado"> I'm a postdoctoral researcher at Uppsala University, working on plant ecology and evolution. My research focuses on pollination biology and the dynamics of pollen transfer in buzz-pollinated systems.</p>
+    </section>
+
+    <section id="about me">
+      <h2>About Me</h2>
+      <img src="photo2.jpg" alt="Profile photo" style="max-width:200px; border-radius:8px;" />
+      <p class="justificado"> I hold a PhD in Ecology, Conservation and Biodiversity. Currently, I work at the Department of Ecology and Genetics, Plant Ecology and Evolution, at Uppsala University. My scientific interests lie at the intersection of plant-pollinator interactions and evolutionary ecology.</p>
+
+      <h3>Education</h3>
+      <ul>
+        <li><p class="justificado"> PhD in Ecology, Conservation and Biodiversity.
+Federal University of Uberlandia, UFU, Uberlandia, Brazil
+Title: Evolution of pollen flowers in Angiosperms, 2023
+Advisor: Vinícius Lourenço Garcia de Brito
+Co supervisor: Thaís Nogales da Costa Vasconcelos</li></p>
+
+        <li><p class="justificado"> Master's degree in Ecology and Conservation of Natural Resources.
+Federal University of Uberlandia, UFU, Uberlandia, Brazil
+Title: Evolution of stem dimorphism and its correlation with floral and reproductive traits in a family with pollen flowers, 2019
+Advisor: Prof. Dr. Vinicius Lourenço Garcia de Brito
+Co supervisor: Prof. Dr. Ana Paula de Souza Caetano</li></p>
+
+        <li><p class="justificado"> Bachelor of Biological Sciences.
+Federal University of Uberlandia, UFU, Uberlandia, Brazil
+Title: Dynamics of nectar secretion in yellow passion fruit flowers (Passiflora edulis Degener) and its relationship with the visitation rate of pollinators and thieves.
+Advisor: Prof. Dr. Solange Cristina Augusto</li></p>
+      </ul>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p class="justificado"> I am an evolutionary ecologist interested in ecological interactions, pollination systems, and the evolution of floral traits. Currently, I am a postdoctoral researcher at Uppsala University in the lab of Prof. Mario Vallejo-Marin. My work focuses on how pollinator behavior influences pollen transfer patterns and male reproductive success in buzz-pollinated species. I design and conducting controlled experiments in flight arenas to observe and record bee interactions with Solanum flowers, providing insights into the ecological and evolutionary dynamics of pollination.</p>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="justificado"> Anderson B, Sabino-Oliveira AC, Matallana-Puerto CA, Arvelos CA, Novaes CS, Cario DC, Schulze-Albuquerque I, Santos JPP, Borges JO, Melo LRF, Consorte PM, Medina-Benavides S, Oliveira TA, Monteiro TR, Varcelo VG, Silva VHD, Oliveira PE, Brito VLG. Pollen Wars: Explosive Pollination Removes Pollen Deposited from Previously Visited Flowers.
+Am Nat. (2024). Dec 204(6):616-625.:  <i><a href="https://doi.org/10.1086/732797</a></i>.</p>
+
+      <p class="justificado"> Reginato M, Ordónez-parra CA, Messeder JVS, Brito VLG, Dellinger A, Kriebel R, Melo LRF, et al. (2024). “MelastomaTRAITs 1.0: A Database of Functional Traits in Melastomataceae, a Large Pantropical Angiosperm Family.” Ecology 105(6): e4308. <i><a href="https://doi.org/10.1002/ecy.4308</a></i>.</p>
+
+      <p class="justificado"> Melo LRF; Vasconcelos TNC; Caetano APS; Brito VLG. (2022). Stamen Diversity in Melastomataceae: Morphology, Color, and Function. In Systematics, Evolution, and Ecology of Melastomataceae, edited by Renato Goldenberg; Fabián A. Michelangeli; Frank Almeda. e ed 1. Vol. 1, 1-793. Switzerland: Springer Nature. <i><a href="https://doi.org/10.1007/978-3-030-99742-7_27</a></i>.</p>
+
+      <p class="justificado"> Melo LRF; Vasconcelos T; Reginato M; Caetano APS; Brito VLG. (2021). Evolution of stamen dimetrism in Melastomataceae, a large radiation of pollen flowers In Perspectives in plant ecology evolution and systematics. v.48, 125589.<i><a href="https://doi.org/10.1016/j.ppees.2021.125589</a></i>.</p>
+
+      <p class="justificado"> Melo LRF; Guimarães BMC; Barônio GJ; Oliveira LC; Cardoso RKOA; Araújo TN; Telles FJ. (2018). How bees perceive flowers and why this is important? In Oecologia Australis. v.22, 362-389 <i><a href="https://doi.org/10.4257/oeco.2018.2204.03</a></i>.</p>
+      
+    </section>
+
+    <section id="cv">
+      <p><a href="CV_Lilian_Melo.pdf" target="_blank">Download my full CV (PDF)</a></p>
+    </section>
+
+
+    <section id="gallery">
+      <h2>Research Gallery</h2>
+      <div class="gallery">
+        <img src="field1.jpg" alt="Fieldwork 1">
+        <img src="lab1.jpg" alt="Lab setup">
+        <img src="bee1.jpg" alt="Bee on flower">
+        <img src="flight_arena.jpg" alt="Flight arena">
+        <img src="field4.jpg" alt="Fieldwork 4">
+        <img src="field5.jpg" alt="Fieldwork 5"
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lilian.melo@ebc.uu.se">lilian.melo@ebc.uu.se</a><br />
+         ORCID: <a href="https://orcid.org/0000-0002-0472-9101" target="_blank">https://orcid.org/0000-0002-0472-9101</a><br />
+         ResearchGate: <a href="https://www.researchgate.net/profile/Lilian-Melo-8?ev=hdr_xprf" target="_blank">Lilian Melo on ResearchGate</a><br />
+         LinkedIn: <a href="https://www.linkedin.com/in/l%C3%ADlian-rodrigues-ferreira-de-melo-7b3675b4/" target="_blank">Lilian Melo on LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lilian Rodrigues Ferreira de Melo</p>
+  </footer>
+</body>
+</html>
